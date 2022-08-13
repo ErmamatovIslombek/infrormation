@@ -1,0 +1,510 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-main-color: #000945;
+}
+
+.container 
+{
+	width: 100%;
+	height: 150vh;
+	background: #000957;
+}
+
+.container > .text_bosh 
+{
+	width: 150px;
+	height: 70px;
+	margin-left: 33px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+
+.container > .text_bosh > h1 
+{
+	color: #fff;
+	font-size: 37px;
+	letter-spacing: 2px;
+}
+
+.container > .st_cont 
+{
+	width: 100%;
+	height: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*border: 1px solid red;*/
+}
+
+
+.container > .st_cont > .st_soni 
+{
+	width: 97%;
+	/*border: 2px solid blue;*/
+	border-radius: 15px;
+	padding: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 0 17px #000935;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+
+.container > .st_cont > .st_soni > .doubl_foiz_box 
+{
+	width: 50%;
+	height: 100%;
+	/*border: 2px solid green;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.container > .st_cont > .st_soni > .doubl_foiz_box > .st_foiz 
+{
+	width: calc(170% / 4 + 10px);
+	height: 120px;
+	background: var(--bg-main-color);
+	border-radius: 25px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/*border: 1px solid green;*/
+}
+
+.container > .st_cont > .st_soni > .doubl_foiz_box > .st_foiz > .raqam_s
+{
+	width: 180px;
+	height: 100px;
+	border-radius: 20px;
+	/*border: 1px solid green;*/
+}
+
+.container > .st_cont > .st_soni > .doubl_foiz_box  > .st_foiz > .raqam_s > h2, h4 
+{
+	color: #fff;
+	margin-top: 10px;
+}
+
+.container > .st_cont > .st_soni > .doubl_foiz_box > .st_foiz > .raqam_s > h4
+
+{
+	color: #555;
+}
+
+.container > .st_cont > .st_soni > .doubl_foiz_box > .st_foiz > .foiz_s 
+{
+	width: 100px;
+	height: 100px;
+	--circle-w: calc(100% - 8px);
+	--bar-protsent: 20%;
+	--bar-color: red;
+	background-image: 
+	radial-gradient(closest-side at 50% 50%, var(--bg-main-color) var(--circle-w), transparent var(--circle-w)),
+	conic-gradient(var(--bar-color) var(--bar-protsent), #000935 var(--bar-protsent));
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container > .st_cont > .st_soni > .doubl_foiz_box > .st_foiz > .foiz_s > h1 
+{
+	color: #fff;
+}
+
+
+
+
+
+
+/*============================================SECOND container=====================================================*/
+
+.container > .second_cont 
+{
+	width: 97%;
+	height: 500px;
+	margin: auto;
+	box-shadow: 0 0 10px #000935;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/*border: 1px solid red;*/
+}
+
+
+.container > .second_cont > .big_diagram 
+{
+	width: 97%;
+	height: 95%;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/*border: 2px solid green;*/
+}
+
+.container > .second_cont > .big_diagram > .diagramma 
+{
+	width: 63%;
+	height: 97%;
+	background: #000945;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*border: 2px solid yellow;*/
+}
+
+
+.container > .second_cont > .big_diagram > .diagramma > .chart_digr 
+{
+    width: 80%;
+    height: 95%;
+}
+
+.container > .second_cont > .big_diagram > .diagramma > .chart_digr > * {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.container > .second_cont > .big_diagram > .stud_skill 
+{
+	width: 35%;
+	height: 97%;
+	border-radius: 20px;
+	background: #000945;
+	/*border: 2px solid blue;*/
+}
+
+
+.container > .second_cont > .big_diagram > .stud_skill > .over_nav
+{
+	width: 100%;
+	height: 80px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, .2);
+	backdrop-filter: blur(10px);
+	position: sticky;
+}
+
+.container > .second_cont > .big_diagram > .stud_skill > .over_nav > h2 
+{
+	color: #fff;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+.container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent 
+{
+	width: 95%;
+	height: 350px;
+	/*border: 1px solid red;*/
+	margin: auto;
+	overflow-y: auto;
+}
+
+.container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent::-webkit-scrollbar {
+	width: 10px;
+}
+
+.container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent::-webkit-scrollbar-track {
+	width: 10px;
+	background: #000954;
+}
+
+.container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent::-webkit-scrollbar-thumb {
+	width: 10px;
+	background: #000934;
+	border-radius: 10px;
+}
+
+.container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent > .stud_nick 
+{
+	width: 95%;
+	height: 60px;
+	margin: auto;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: #000934;
+	margin-top: 5px;
+}
+
+
+.container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent> .stud_nick > .studen_img 
+{
+	width: 30%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 20px;
+	/*border: 1px solid green;*/
+}
+
+.container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent > .stud_nick > .studen_img > .picture
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	/*border: 1px solid red;*/
+	background: url(../img/images2.jpg);
+	background-size: 100%;
+	background-position: center;
+}
+
+.container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent > .stud_nick > .studen_name 
+{
+	width: 70%;
+	height: 100%;
+	/*border: 1px solid yellow;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent > .stud_nick > .studen_name  > h2 
+{
+	color: #fff;
+	font-size: 17px;
+}
+
+.container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent > .stud_nick > .studen_name  > h3 
+{
+	color: white;
+	font-size: 18px;
+	margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*================================================MEDIA QUARY BILAN ISHLASH======================================================*/
+
+
+@media screen and (max-width: 1000px) 
+
+{
+	.container > .st_cont > .st_soni  
+	{
+		flex-direction: column;
+
+	}
+
+	.container > .st_cont > .st_soni > .doubl_foiz_box 
+	{
+		width: 100%;
+	}
+
+	.container > .st_cont > .st_soni > .doubl_foiz_box > .st_foiz 
+	{
+		margin-top: 20px;
+	}
+
+	.container > .st_cont > .st_soni > .doubl_foiz_box > .st_foiz > .foiz_s
+	{
+		width: 100px;
+		height: 100px
+	}
+
+	.container > .st_cont 
+	{
+		margin-top: 80px;
+	}
+
+	.container > .second_cont 
+	{
+		margin-top: 100px;
+		height: 450px;
+	}
+
+	.container > .second_cont > .big_diagram > .diagramma
+	{
+		width: 47%;
+		height: 370px;	
+	}
+
+	.container > .second_cont > .big_diagram > .stud_skill
+	{
+		width: 48%;
+		height: 370px;
+	}
+
+	.container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent
+	{
+		height: 250px;
+	}
+}
+
+
+
+
+@media screen and (max-width: 1250px) 
+{
+	.container > .st_cont > .st_soni > .doubl_foiz_box > .st_foiz
+	{
+		padding: 15px;
+	}
+
+	.container > .st_cont > .st_soni > .doubl_foiz_box > .st_foiz > .raqam_s
+	{
+		width: 100px;
+	}
+
+	.container > .st_cont > .st_soni > .doubl_foiz_box > .st_foiz > .raqam_s > h2 
+	{
+		font-size: 19px;
+	}
+
+	.container > .st_cont > .st_soni > .doubl_foiz_box > .st_foiz > .raqam_s > h4
+	{
+		font-size: 15px;
+	}
+
+	.container > .st_cont > .st_soni > .doubl_foiz_box > .st_foiz > .foiz_s > h1 
+	{
+        font-size: 25px;
+	} 
+}
+
+
+
+@media screen and (max-width: 765px)
+{
+	   .container  
+	   {
+	   	height: 170vh;
+	   }
+
+    .container > .second_cont > .big_diagram
+	{
+		flex-direction: column;
+	}
+
+    .container > .second_cont > .big_diagram > .diagramma
+    {
+        width: 100%;
+        height: 460px;
+    }
+
+    	.container > .second_cont > .big_diagram > .stud_skill
+	{
+		width: 100%;
+		height: 450px;
+	}
+
+    .container > .second_cont 
+	{
+		height: 990px;
+	}
+}
+
+
+
+@media screen and (max-width: 545px)
+{
+	.container
+	{
+		height: 220vh;
+	}
+}
+
+
+
+@media screen and (max-width: 455px) 
+{
+    .container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent > .stud_nick > .studen_name  > h2 
+    {
+	color: #fff;
+	font-size: 14px;
+    }
+
+    .container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent > .stud_nick > .studen_name  > h3
+    {
+    	font-size: 15px;
+    }
+
+    .container > .second_cont > .big_diagram > .stud_skill > .over_nav > h2
+    {
+    	font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 515px)
+{
+	.container > .st_cont > .st_soni > .doubl_foiz_box 
+	{
+		flex-direction: column;
+	}
+
+	.container > .st_cont > .st_soni > .doubl_foiz_box > .st_foiz
+	{
+		width: 100%;
+	}
+
+	.container > .second_cont > .big_diagram
+	{
+		flex-direction: column;
+	}
+
+	.container > .second_cont 
+	{
+		margin-top: 360px;
+		height: 970px;
+	}
+
+	.container > .second_cont > .big_diagram > .diagramma
+	{
+		width: 100%;
+		height: 400px;
+
+	}
+	.container > .second_cont > .big_diagram > .stud_skill
+	{
+		width: 100%;
+		height: 450px;
+	}
+
+	.container > .second_cont > .big_diagram > .stud_skill > .stud_nick_parent 
+	{
+		height: 340px;
+	}
+
+	.container > .st_cont > .st_soni
+	{
+		margin-top: 260px;
+	}
+
+	.container 
+	{
+		height: 250vh;
+	}
+}
